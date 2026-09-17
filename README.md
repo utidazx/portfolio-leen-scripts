@@ -145,18 +145,6 @@ Para cadastrar novos itens, basta abrir o arquivo [`public/data/scripts.js`](pub
 
 ---
 
-## 🌐 Publicação / Deploy
-
-O projeto pode ser facilmente publicado em serviços de hospedagem estática:
-
-- **[Vercel](https://vercel.com/):** Conecte o repositório, selecione o preset *Vite* e faça o deploy.
-- **[Netlify](https://netlify.com/):** Configure o comando de build como `npm run build` e o diretório de publicação como `dist`.
-- **GitHub Pages:** Configure o `base` em `vite.config.js` correspondente ao nome do repositório e compile para o branch `gh-pages`.
-
-> **Atenção para SPAs:** Caso utilize hospedagem estática simples, lembre-se de configurar a regra de redirecionamento (Rewrite) para que todas as rotas apontem para `index.html`.
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença [MIT](LICENSE). Sinta-se livre para usar, estudar e adaptar às suas necessidades.
