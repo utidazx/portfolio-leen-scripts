@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ LeenScripts
+# ⚡ SISTEMA DE GERENCIAMENTO DE SCRIPTS E EXECUTORES
 
 **Portfólio moderno, responsivo e de alta performance para publicação e download de Scripts e Executores.**
 
@@ -16,7 +16,9 @@
 
 ## 📖 Sobre o Projeto
 
-O **LeenScripts** é uma Single Page Application (SPA) desenvolvida com **Vue 3** e **Vite**, projetada especialmente para criadores de scripts, desenvolvedores e comunidades gamer/modding exibirem e distribuírem seus projetos, códigos e executores com elegância e praticidade.
+O sistema é uma Single Page Application (SPA) desenvolvida com **Vue 3** e **Vite**, projetada especialmente para o [@leenrobloxscripts.](https://www.youtube.com/@leenrobloxscripts)
+Que atualmente utiliza ele para armazenar/divulgar seus scripts e executores.
+
 
 O grande diferencial arquitetural do projeto é a **gestão desacoplada de dados**: as informações dos scripts são lidas a partir de um arquivo estático externo (`public/data/scripts.js`). Isso significa que você pode **adicionar, editar ou remover itens diretamente no servidor/produção sem a necessidade de rodar um novo build**.
 
