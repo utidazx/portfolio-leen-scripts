@@ -1,33 +1,33 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
 
-const router = useRouter()
-const show = ref(false)
+const router = useRouter();
+const show = ref(false);
 
 onMounted(() => {
   // Limpa e verifica o consentimento salvo
-  const consent = localStorage.getItem('leen-cookie-consent')
+  const consent = localStorage.getItem("cookie-consent");
   if (!consent) {
     setTimeout(() => {
-      show.value = true
-    }, 600)
+      show.value = true;
+    }, 600);
   }
-})
+});
 
 function accept() {
-  localStorage.setItem('leen-cookie-consent', 'accepted')
-  show.value = false
+  localStorage.setItem("cookie-consent", "accepted");
+  show.value = false;
 }
 
 function decline() {
-  localStorage.setItem('leen-cookie-consent', 'declined')
-  show.value = false
+  localStorage.setItem("cookie-consent", "declined");
+  show.value = false;
 }
 
 function openPolicy() {
-  show.value = false
-  router.push('/politica-privacidade')
+  show.value = false;
+  router.push("/politica-privacidade");
 }
 </script>
 
@@ -39,9 +39,11 @@ function openPolicy() {
         <div class="cookie-body">
           <p class="cookie-msg">
             Usamos <strong>cookies</strong> e tecnologias de terceiros para
-            melhorar sua experiência e exibir anúncios. Ao continuar,
-            você concorda com nossa
-            <button class="cookie-link" @click="openPolicy">Política de Privacidade</button>.
+            melhorar sua experiência e exibir anúncios. Ao continuar, você
+            concorda com nossa
+            <button class="cookie-link" @click="openPolicy">
+              Política de Privacidade</button
+            >.
           </p>
         </div>
         <div class="cookie-btns">

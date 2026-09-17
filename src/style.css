@@ -120,7 +120,6 @@ a {
 .hero {
   border-bottom: 1px solid var(--border);
   padding: 120px 24px;
-  background-image: url("../src/assets/leen_banner.png");
   background-size: cover;
   background-position: center;
   text-align: center;
